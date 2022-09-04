@@ -71,6 +71,19 @@ letter-spacing: 0.06em;
     padding-right: 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /*--HEADER--*/
 
 .page-header{
@@ -203,6 +216,7 @@ padding: 10px 32px;
 display: block;
 border-radius: 4px;
 min-width: 216px;
+border: none;
 }
 
 /*--FEATURE SECTION--*/
@@ -432,7 +446,7 @@ border-radius: 4px;
 }
 
 .portfolio-examples-list{
-    flex-basis: calc((100% / 3) - 60px);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-tytle{
