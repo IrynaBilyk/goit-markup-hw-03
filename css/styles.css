@@ -93,10 +93,6 @@ align-items: center;
     margin-left: auto;
 }
 
-.header-menu{
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
 .blu{
     color:var(--accent-color);
@@ -122,6 +118,9 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 
 .link-nav:hover,
@@ -136,6 +135,9 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 
 
@@ -165,12 +167,9 @@ letter-spacing: 0.02em;
     text-align: center;
     padding: 200px 200px;
     margin: 0 auto;
+    padding: 200px;
 }
 
-.hero-box{
-    width: 700px;
-    margin: 0 auto;
-}
 
 .hero-title{
     color:var(--logo-light-color);
@@ -215,7 +214,6 @@ min-width: 216px;
 
 .list-benefits{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -292,14 +290,15 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;  
 margin-left: auto;
+margin-bottom: 50px;
 margin-right: auto;
+
 }
 
 .list-team{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top:  50px;
 }
 
 .member-list{
@@ -309,22 +308,19 @@ margin-right: auto;
 }
 
 .member-content{
-border: 1px solid #F5F4FA;
-    border-radius: 0px 0px 4px 4px;
-    border-top: none;
     padding-top: 29px;
     padding-bottom: 29px;
     background-color:#ffffff;
 }
 
 .member-team{
-font-family: 'Roboto', sans-serif;
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 
@@ -342,18 +338,19 @@ letter-spacing: 0.03em;
 
 .contacts{
     background-color:var(--background-color);
-}
-
-.footer-section{
-    padding-top: 60px;
+     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 
 .logo-footer{
     display: block;
     margin-bottom: 20px;
 }
 
+.contact-list:not(:last-child){
+    margin-bottom: 9px;
+}
 
 .a-contact{
     color:var(--logo-light-color);
@@ -362,12 +359,8 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-bottom: 9px;
 } 
 
-.mail-link{
-    margin-bottom: 9px;
-}
 
 .mail-link,
 .phone-link{
@@ -463,7 +456,6 @@ margin-bottom: 4px;
 
 .portfolio-page-title{
     display: block;
-    width: 370px;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
